@@ -1,0 +1,50 @@
+.container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.thumbnail {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.thumbnail > button {
+  justify-content: center;
+  align-items: center;
+}
+
+h2,
+label {
+  color: black;
+}
+
+input {
+  background-color: white;
+  border: none;
+  outline: 1px solid gray;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+button {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
