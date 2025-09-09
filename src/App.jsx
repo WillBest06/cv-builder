@@ -1,4 +1,5 @@
 import "./App.css";
+import CVPreview from "./components/CVPreview.JSX";
 import GeneralInfo from "./components/GeneralInfo";
 import { useState } from "react";
 
@@ -16,7 +17,12 @@ function App() {
     setGeneralInfoData({ ...generalInfoData, [key]: newValue });
   };
 
-  return <GeneralInfo handleInputChange={handleInputChange}></GeneralInfo>;
+  return (
+    <>
+      <GeneralInfo handleInputChange={handleInputChange}></GeneralInfo>
+      <CVPreview generalInfo={generalInfoData}></CVPreview>
+    </>
+  );
 }
 
 export default App;

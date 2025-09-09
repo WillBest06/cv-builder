@@ -1,0 +1,20 @@
+.cv-preview {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: black;
+}
+
+.cv-preview > div {
+  width: 100%;
+}
