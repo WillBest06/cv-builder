@@ -1,8 +1,22 @@
 import "./App.css";
 import GeneralInfo from "./components/GeneralInfo";
+import { useState } from "react";
 
 function App() {
-  return <GeneralInfo></GeneralInfo>;
+  const [generalInfoData, setGeneralInfoData] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
+  });
+
+  const handleInputChange = (e) => {
+    const key = e.target.name;
+    const newValue = e.target.value;
+
+    setGeneralInfoData({ ...generalInfoData, [key]: newValue });
+  };
+
+  return <GeneralInfo handleInputChange={handleInputChange}></GeneralInfo>;
 }
 
 export default App;

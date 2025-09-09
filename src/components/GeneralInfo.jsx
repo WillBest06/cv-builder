@@ -1,6 +1,6 @@
 import "../styles/GeneralInfo.css";
 
-function GeneralInfo() {
+function GeneralInfo({ handleInputChange }) {
   return (
     <div className="container">
       <div className="thumbnail">
@@ -15,20 +15,35 @@ function GeneralInfo() {
           </span>
         </button>
       </div>
-      <form action="">
+      <form className="generalInfoForm" action="">
         <div>
           <label htmlFor="name">Full name</label>
-          <input type="text" name="name" id="name" />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            onChange={handleInputChange}
+          />
         </div>
 
         <div>
           <label htmlFor="email">Email address</label>
-          <input type="email" name="email" id="email" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            onChange={handleInputChange}
+          />
         </div>
 
         <div>
           <label htmlFor="phoneNumber">Telephone number</label>
-          <input type="tel" name="phoneNumber" id="phoneNumber" />
+          <input
+            type="tel"
+            name="phoneNumber"
+            id="phoneNumber"
+            onChange={handleInputChange}
+          />
         </div>
 
         <button>Submit</button>
