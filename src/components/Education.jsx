@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/Education.css";
 
-function Education() {
+function Education({ data, handleInputChange }) {
   const [isEditing, setIsEditing] = useState(false);
 
   const handleEdit = () => {
@@ -35,11 +35,23 @@ function Education() {
           <form className="education-form" action="">
             <div>
               <label htmlFor="institution">Name of institution</label>
-              <input type="text" name="institution" id="institution" />
+              <input
+                type="text"
+                name="institution"
+                id="institution"
+                defaultValue={data.institution}
+                onChange={handleInputChange}
+              />
             </div>
             <div>
-              <label htmlFor="study">Title of study</label>
-              <input type="text" name="study" id="study" />
+              <label htmlFor="studies">Title of study</label>
+              <input
+                type="text"
+                name="studies"
+                id="studies"
+                defaultValue={data.studies}
+                onChange={handleInputChange}
+              />
             </div>
 
             <div>
@@ -49,6 +61,8 @@ function Education() {
                 name="startYear"
                 id="startYear"
                 placeholder="YYYY"
+                defaultValue={data.startYear}
+                onChange={handleInputChange}
               />
             </div>
             <div>
@@ -58,6 +72,8 @@ function Education() {
                 name="endYear"
                 id="endYear"
                 placeholder="YYYY"
+                defaultValue={data.endYear}
+                onChange={handleInputChange}
               />
             </div>
             <button onClick={handleSubmit}>Submit</button>

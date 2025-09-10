@@ -11,21 +11,38 @@ function App() {
     phoneNumber: "",
   });
 
-  const handleInputChange = (e) => {
+  const [educationData, setEducationData] = useState({
+    institution: "",
+    studies: "",
+    startYear: "",
+    endYear: "",
+  });
+
+  const handleGeneralInfoChange = (e) => {
     const key = e.target.name;
     const newValue = e.target.value;
 
     setGeneralInfoData({ ...generalInfoData, [key]: newValue });
   };
 
+  const handleEducationChange = (e) => {
+    const key = e.target.name;
+    const newValue = e.target.value;
+
+    setEducationData({ ...educationData, [key]: newValue });
+  };
+
   return (
     <>
       <section className="cv-input">
         <GeneralInfo
-          handleInputChange={handleInputChange}
+          handleInputChange={handleGeneralInfoChange}
           data={generalInfoData}
         ></GeneralInfo>
-        <Education></Education>
+        <Education
+          data={educationData}
+          handleInputChange={handleEducationChange}
+        ></Education>
       </section>
 
       <CVPreview generalInfo={generalInfoData}></CVPreview>
