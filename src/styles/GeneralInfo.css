@@ -7,6 +7,10 @@
   gap: 1rem;
 }
 
+.general-info {
+  grid-area: "general-info";
+}
+
 .thumbnail {
   display: flex;
   align-items: center;
