@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/GeneralInfo.css";
 
-function GeneralInfo({ handleInputChange }) {
+function GeneralInfo({ data, handleInputChange }) {
   const [isEditing, setIsEditing] = useState(false);
 
   const handleEdit = () => {
@@ -37,6 +37,7 @@ function GeneralInfo({ handleInputChange }) {
               type="text"
               name="name"
               id="name"
+              defaultValue={data.name}
               onChange={handleInputChange}
             />
           </div>
@@ -47,6 +48,7 @@ function GeneralInfo({ handleInputChange }) {
               type="email"
               name="email"
               id="email"
+              defaultValue={data.email}
               onChange={handleInputChange}
             />
           </div>
@@ -57,6 +59,7 @@ function GeneralInfo({ handleInputChange }) {
               type="tel"
               name="phoneNumber"
               id="phoneNumber"
+              defaultValue={data.phoneNumber}
               onChange={handleInputChange}
             />
           </div>

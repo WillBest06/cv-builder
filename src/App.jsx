@@ -16,7 +16,12 @@ function App() {
     setGeneralInfoData({ ...generalInfoData, [key]: newValue });
   };
 
-  return <GeneralInfo handleInputChange={handleInputChange}></GeneralInfo>;
+  return (
+    <GeneralInfo
+      handleInputChange={handleInputChange}
+      data={generalInfoData}
+    ></GeneralInfo>
+  );
 }
 
 export default App;

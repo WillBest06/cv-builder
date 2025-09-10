@@ -14,8 +14,11 @@
 }
 
 .thumbnail > button {
+  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
 }
 
 h2,
@@ -30,6 +33,13 @@ input {
   outline: 1px solid gray;
   border-radius: 0.25rem;
   font-size: 1.5rem;
+  padding: 0.5rem;
+  transition: outline 0.3s ease-in-out;
+}
+
+input:focus {
+  outline: 4px solid turquoise;
+  transition: outline 0.3s ease-in-out;
 }
 
 form {
