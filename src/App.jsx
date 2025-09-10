@@ -20,11 +20,14 @@ function App() {
 
   return (
     <>
-      <GeneralInfo
-        handleInputChange={handleInputChange}
-        data={generalInfoData}
-      ></GeneralInfo>
-      <Education></Education>
+      <section className="cv-input">
+        <GeneralInfo
+          handleInputChange={handleInputChange}
+          data={generalInfoData}
+        ></GeneralInfo>
+        <Education></Education>
+      </section>
+
       <CVPreview generalInfo={generalInfoData}></CVPreview>
     </>
   );

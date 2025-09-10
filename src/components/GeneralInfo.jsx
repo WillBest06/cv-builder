@@ -14,7 +14,7 @@ function GeneralInfo({ data, handleInputChange }) {
   };
 
   return (
-    <div className="container general-info">
+    <div className="container">
       <div className="thumbnail">
         <h2>General Information</h2>
         {!isEditing && (
