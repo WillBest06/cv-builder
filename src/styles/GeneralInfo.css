@@ -8,7 +8,7 @@
 }
 
 .general-info {
-  grid-area: "general-info";
+  grid-area: general-info;
 }
 
 .thumbnail {
