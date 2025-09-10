@@ -18,13 +18,11 @@ function App() {
   };
 
   return (
-    (
     <>
       <GeneralInfo
-      handleInputChange={handleInputChange}
-      data={generalInfoData}
-    ></GeneralInfo>
-  )
+        handleInputChange={handleInputChange}
+        data={generalInfoData}
+      ></GeneralInfo>
       <CVPreview generalInfo={generalInfoData}></CVPreview>
     </>
   );
