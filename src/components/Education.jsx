@@ -42,25 +42,23 @@ function Education() {
               <input type="text" name="study" id="study" />
             </div>
 
-            <div className="education-years">
-              <div className="year-container">
-                <label htmlFor="startYear">Start year</label>
-                <input
-                  type="text"
-                  name="startYear"
-                  id="startYear"
-                  placeholder="YYYY"
-                />
-              </div>
-              <div className="year-container">
-                <label htmlFor="endYear">End year</label>
-                <input
-                  type="text"
-                  name="endYear"
-                  id="endYear"
-                  placeholder="YYYY"
-                />
-              </div>
+            <div>
+              <label htmlFor="startYear">Start year</label>
+              <input
+                type="text"
+                name="startYear"
+                id="startYear"
+                placeholder="YYYY"
+              />
+            </div>
+            <div>
+              <label htmlFor="endYear">End year</label>
+              <input
+                type="text"
+                name="endYear"
+                id="endYear"
+                placeholder="YYYY"
+              />
             </div>
             <button onClick={handleSubmit}>Submit</button>
           </form>

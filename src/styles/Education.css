@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: center;
 }
 
 .education-form > div {
@@ -13,25 +12,4 @@
 
 .education-form > div > input {
   width: 100%;
-}
-
-div.education-years {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1rem;
-  width: 50%;
-}
-
-.education-years > div {
-  display: flex;
-  flex-direction: column;
-}
-
-.year-container {
-  max-width: 50%;
-}
-
-.education-years > div > input {
-  max-width: 100%;
 }
