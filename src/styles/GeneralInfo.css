@@ -9,6 +9,7 @@
 
 .thumbnail {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
@@ -42,16 +43,20 @@ input:focus {
   transition: outline 0.3s ease-in-out;
 }
 
-form {
+.generalInfoForm {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-form > div {
+.generalInfoForm > div {
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+
+.generalInfoForm > div > input {
+  width: 100%;
 }
 
 button {

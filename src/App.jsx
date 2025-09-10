@@ -1,5 +1,6 @@
 import "./App.css";
 import CVPreview from "./components/CVPreview.JSX";
+import Education from "./components/Education";
 import GeneralInfo from "./components/GeneralInfo";
 import { useState } from "react";
 
@@ -23,6 +24,7 @@ function App() {
         handleInputChange={handleInputChange}
         data={generalInfoData}
       ></GeneralInfo>
+      <Education></Education>
       <CVPreview generalInfo={generalInfoData}></CVPreview>
     </>
   );
