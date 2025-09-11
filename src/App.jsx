@@ -1,6 +1,7 @@
 import "./App.css";
 import CVPreview from "./components/CVPreview.JSX";
 import Education from "./components/Education";
+import Experience from "./components/Experience";
 import GeneralInfo from "./components/GeneralInfo";
 import { useState } from "react";
 
@@ -14,6 +15,14 @@ function App() {
   const [educationData, setEducationData] = useState({
     institution: "",
     studies: "",
+    startYear: "",
+    endYear: "",
+  });
+
+  const [experienceData, setExperienceData] = useState({
+    company: "",
+    position: "",
+    responsibilities: "",
     startYear: "",
     endYear: "",
   });
@@ -32,6 +41,13 @@ function App() {
     setEducationData({ ...educationData, [key]: newValue });
   };
 
+  const handleExperienceChange = (e) => {
+    const key = e.target.name;
+    const newValue = e.target.value;
+
+    setExperienceData({ ...experienceData, [key]: newValue });
+  };
+
   return (
     <>
       <section className="cv-input">
@@ -43,11 +59,17 @@ function App() {
           data={educationData}
           handleInputChange={handleEducationChange}
         ></Education>
+
+        <Experience
+          data={experienceData}
+          handleInputChange={handleExperienceChange}
+        ></Experience>
       </section>
 
       <CVPreview
         generalInfo={generalInfoData}
         education={educationData}
+        experience={experienceData}
       ></CVPreview>
     </>
   );
