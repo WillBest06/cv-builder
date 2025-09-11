@@ -50,6 +50,12 @@ function App() {
 
   return (
     <>
+      <CVPreview
+        generalInfo={generalInfoData}
+        education={educationData}
+        experience={experienceData}
+      ></CVPreview>
+
       <section className="cv-input">
         <GeneralInfo
           handleInputChange={handleGeneralInfoChange}
@@ -65,12 +71,6 @@ function App() {
           handleInputChange={handleExperienceChange}
         ></Experience>
       </section>
-
-      <CVPreview
-        generalInfo={generalInfoData}
-        education={educationData}
-        experience={experienceData}
-      ></CVPreview>
     </>
   );
 }

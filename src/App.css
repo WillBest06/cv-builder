@@ -6,7 +6,6 @@
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: "cv-input cv-preview";
-
   gap: 4rem;
   padding: 2rem;
   min-height: 100dvh;
@@ -22,4 +21,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0;
+  }
 }
