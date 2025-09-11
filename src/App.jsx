@@ -1,5 +1,5 @@
 import "./App.css";
-import CVPreview from "./components/CVPreview.JSX";
+import CVPreview from "./components/CVPreview";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import GeneralInfo from "./components/GeneralInfo";
