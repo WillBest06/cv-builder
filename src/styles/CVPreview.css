@@ -7,6 +7,7 @@
   align-items: center;
   gap: 2rem;
   grid-area: cv-preview;
+  height: fit-content;
 }
 
 h1,

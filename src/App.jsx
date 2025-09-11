@@ -45,7 +45,10 @@ function App() {
         ></Education>
       </section>
 
-      <CVPreview generalInfo={generalInfoData}></CVPreview>
+      <CVPreview
+        generalInfo={generalInfoData}
+        education={educationData}
+      ></CVPreview>
     </>
   );
 }
