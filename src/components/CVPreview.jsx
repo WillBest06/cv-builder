@@ -11,6 +11,9 @@ function CVPreview({ generalInfo, education }) {
         <p>Email: {generalInfo.email}</p>
         <p>Phone number: {generalInfo.phoneNumber}</p>
       </div>
+
+      <span className="cv-section-divider"></span>
+
       <div>
         <h2>Education</h2>
         <p>Institution: {education.institution}</p>

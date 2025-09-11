@@ -20,3 +20,8 @@ p {
 .cv-preview > div {
   width: 100%;
 }
+
+.cv-section-divider {
+  width: 95%;
+  border-top: 1px solid lightgrey;
+}
